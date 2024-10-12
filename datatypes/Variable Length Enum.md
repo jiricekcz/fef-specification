@@ -46,3 +46,11 @@ function Convert_Integer_To_Variable_Length_Enum(value) {
     }
     write value as byte to output
 }
+```
+## Example
+
+The representation of the number `66` (`0b01000010`) is equal to its binary representation (`0b01000010` = `0x42`).
+
+The representation of the number `128` (`0b10000000`) are two bytes (`0b10000001 0b00000001`) which is equal to `0x81 0x01`. 
+
+The representation of the number `255` (`0b11111111`) are two bytes (`0b10000001 0b01111111`) which is equal to `0x81 0x7F`.
