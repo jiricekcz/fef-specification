@@ -54,3 +54,11 @@ The representation of the number `66` (`0b01000010`) is equal to its binary repr
 The representation of the number `128` (`0b10000000`) are two bytes (`0b10000001 0b00000001`) which is equal to `0x81 0x01`. 
 
 The representation of the number `255` (`0b11111111`) are two bytes (`0b10000001 0b01111111`) which is equal to `0x81 0x7F`.
+
+## Notes
+
+- Any value <= 127 can be represented as a single byte.
+- It is allowed to prefix any value with any number of `0x80` bytes to alter the length of the variable length enum without changing the value.
+  - This can be useful when changing the value of an enum in place.
+  - It is not allowed to convey information in the number of `0x80` bytes.
+  - Compression algorithms can remove these bytes to save space.
