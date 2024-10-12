@@ -62,3 +62,4 @@ The representation of the number `255` (`0b11111111`) are two bytes (`0b10000001
   - This can be useful when changing the value of an enum in place.
   - It is not allowed to convey information in the number of `0x80` bytes.
   - Compression algorithms can remove these bytes to save space.
+- When parsing a variable length enum, the parser is able to detect when it should stop reading.
