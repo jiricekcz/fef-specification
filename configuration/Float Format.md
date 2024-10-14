@@ -12,4 +12,4 @@ The Float Format configuration key defines the format of float literals as per t
 
 ## Format
 
-This configuration value is in standard format - a single [variable length enum](/datatypes/Variable%20Length%20Enum.md) with the *identifier* of the selected value. 
+This configuration value is in standard format - a single [variable length enum](/binary_type/Variable%20Length%20Enum.md) with the *identifier* of the selected value. 

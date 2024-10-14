@@ -22,9 +22,9 @@ As a binary format, FEF is a sequence of bytes. Bacause most data in the FEF for
 
 ### Sequence of parts
 
-The first [*part*](#part) of the sequence is a [variable length enum](/datatypes/Variable%20Length%20Enum.md), that indicates the version of the FEF format (in this case coresponing to the number `1`).
+The first [*part*](#part) of the sequence is a [variable length enum](/binary_types/Variable%20Length%20Enum.md), that indicates the version of the FEF format (in this case coresponing to the number `1`).
 
-Second part is a [variable length enum](/datatypes/Variable%20Length%20Enum.md) that indicates the file content type. If the value of the enum is not in this table, the behaviour of any parser is undefined. This allows for the introduction of more file content types in the future without introducing breaking changes.
+Second part is a [variable length enum](/binary_types/Variable%20Length%20Enum.md) that indicates the file content type. If the value of the enum is not in this table, the behaviour of any parser is undefined. This allows for the introduction of more file content types in the future without introducing breaking changes.
 
 In this version the following content types are defined:
 
