@@ -1,12 +1,12 @@
 # Expression
 
-An expression is the building block of a formula. It consists of an *indetifier* and *data*. The *identifier* is a [variable length enum](/binary_type/Variable%20Length%20Enum.md) that indicates the type of the expression. The *data* is a sequence of bytes that is interpreted based on the *identifier*. Usually the shorter the *data*, the lower value the *identifier* will be to provide a lower percentage overhead. 
+An expression is the building block of a formula. It consists of an *identifier* and *data*. The *identifier* is a [variable length enum](/binary_type/Variable%20Length%20Enum.md) that indicates the type of the expression. The *data* is a sequence of bytes that is interpreted based on the *identifier*. Usually the shorter the *data*, the lower value the *identifier* will be to provide a lower percentage overhead. 
 
-If an *identifier* present in the format is not described by this specification, the behaviour of any parser is undefined. This allows for the introduction of more expressions in the future without introducing breaking changes.
+If an *identifier* present in the format is not described by this specification, the behavior of any parser is undefined. This allows for the introduction of more expressions in the future without introducing breaking changes.
 
 ## Expression Sets
 
-An expression set is a set of expression with some common use or functionality. Expression sets are used to group expressions that are used together into well defined groups. A parser can then only **partialy** implement the specification by only implementing the expression sets that are needed for the specific use case, when, for example, the size of the parser is a concern. By default, it is expected that all parsers implement all expression sets. All parsers must implement the [Core Expression Set](#core-expression-set).
+An expression set is a set of expression with some common use or functionality. Expression sets are used to group expressions that are used together into well defined groups. A parser can then only **partially** implement the specification by only implementing the expression sets that are needed for the specific use case, when, for example, the size of the parser is a concern. By default, it is expected that all parsers implement all expression sets. All parsers must implement the [Core Expression Set](#core-expression-set).
 
 ### Core Expression Set
 
