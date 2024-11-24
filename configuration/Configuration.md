@@ -9,7 +9,8 @@ Configuration is a list of key-value pairs. If the parsing of an expression is a
 
 The binary encoding of configuration keys is as follows:
 1. A [variable length enum](/binary_types/Variable%20Length%20Enum.md) describing the configuration *identifier*.
-2. Value of the configuration key as described in the configuration key's documentation.
+2. A [variable length enum](/binary_types/Variable%20Length%20Enum.md) describing the number of bytes the configuration value takes.
+3. Value of the configuration key as described in the configuration key's documentation.
 
 ## Binary encoding of a configuration 
 
