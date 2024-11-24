@@ -1,9 +1,9 @@
 # Configuration
 
-Configuration is primarily a set of rules for the parser/interpreter of a FEF file. It can modify its behaviour across the parsing of multiple files. It can be agreed upon beforehand, sent together with multiple formulas, or be included in some file, that uses the FEF format itself.  
+Configuration is primarily a set of rules for the parser/interpreter of a FEF file. It can modify its behavior across the parsing of multiple files. It can be agreed upon beforehand, sent together with multiple formulas, or be included in some file, that uses the FEF format itself.  
 It can be useful to modify the default configuration, for example, when sending a large number of formulas, that need little precision, thus using f16 as all the numbers.
 
-Configuration is a list of key-value pairs. If the parsing/evaluation of an expression is affected by a configuration, it is noted in the expression's description.
+Configuration is a list of key-value pairs. If the parsing of an expression is affected by a configuration, it is noted in the expression's description.
 
 ## Binary encoding of configuration keys
 
