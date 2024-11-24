@@ -2,7 +2,7 @@
 
 ## Abstract
 
-Performs multiplication on two operands.
+Represents multiplication of two operands.
 
 ## Expression Data
 

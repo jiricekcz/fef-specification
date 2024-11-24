@@ -2,7 +2,7 @@
 
 ## Abstract
 
-Performs subtraction on two operands.
+Represents subtraction of two operands.
 
 ## Expression Data
 

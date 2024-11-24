@@ -2,7 +2,7 @@
 
 ## Abstract
 
-Performs division on two arbitrary operands. Precision of this operation should be based on the underlying data type used by the implementation.
+Represents division of two arbitrary operands. Precision of this operation should be based on the underlying data type used by the implementation.
 
 ## Expression Data
 

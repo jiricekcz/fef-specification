@@ -2,7 +2,7 @@
 
 ## Abstract
 
-Performs addition on two operands.
+Represents addition of two operands.
 
 ## Expression Data
 
