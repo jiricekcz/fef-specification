@@ -65,6 +65,7 @@ Elementary expressions are either used very often, or benefit from a very low ov
 | `33` (`0x21`) | [Cube](/expressions/Cube.md)                           | [Unary Operator](#unary-operator-expressions)   | [Core](#core-expression-set) |
 | `34` (`0x22`) | [Square Root](/expressions/Square%20Root.md)           | [Unary Operator](#unary-operator-expressions)   | [Core](#core-expression-set) |
 | `35` (`0x23`) | [Cube Root](/expressions/Cube%20Root.md)               | [Unary Operator](#unary-operator-expressions)   | [Core](#core-expression-set) |
+| `36` (`0x24`) | [Reciprocal](/expressions/Reciprocal.md)               | [Unary Operator](#unary-operator-expressions)   | [Core](#core-expression-set) |
 
 ### Extended Expressions (*identifier* >= 128)
 
