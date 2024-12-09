@@ -30,7 +30,7 @@ If the file content type is not in this table, the parser should notify the call
 
 In this version the following content types are defined:
 
-| Integer value | Content Type                                              | Description                                                                                 | Short name |
-| ------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ---------- |
-| `1` (`0x01`)  | [Raw Formula](/file_content_types/Raw%20Formula.md)       | A single evaluatable mathematical formula with no attached data                             | `RAW`      |
-| `2` (`0x02`)  | [Single Formula](/file_content_types/Single%20Formula.md) | A single evaluatable mathematical formula with possible metadata and configuration attached | `SINGLE`   |
+| Integer value | Content Type                                              | Description                                                                                 | Short name       |
+| ------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ---------------- |
+| `1` (`0x01`)  | [Raw Formula](/file_content_types/Raw%20Formula.md)       | A single evaluatable mathematical formula with no attached data                             | `RAW_FORMULA`    |
+| `2` (`0x02`)  | [Single Formula](/file_content_types/Single%20Formula.md) | A single evaluatable mathematical formula with possible metadata and configuration attached | `SINGLE_FORMULA` |
