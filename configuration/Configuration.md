@@ -21,10 +21,10 @@ A whole set of configurations are encoded as a single [variable length enum](/bi
 ### Enum configurations
 
 Enum configurations have identifiers less than or equal to `127` (`0x7F`). Their values are encoded as a variable length enum. This ensures that the configuration can always be parsed correctly (and ignored if needed), even if the interpretation of the identifier is not specified by the version of the specification the parser uses. It also ensures low overhead for the most common configurations that take little space by them selves. 
-| Name                                                 | Identifier   | Possible Values                                                     | Default Value |
-| ---------------------------------------------------- | ------------ | ------------------------------------------------------------------- | ------------- |
-| [Float format](/configuration/Float%20Format.md)     | `0` (`0x00`) | `b16`, `b32`, `b64`                                                 | `b64`         |
-| [Integer format](/configuration/Integer%20Format.md) | `1` (`0x01`) | `i8`, `i16`, `i32`, `i64`, `i128`,`u8`, `u16`, `u32`, `u64`, `u128` | `i32`         |
+| Name                                                 | Identifier   | Possible Values                                                     | Default Value | Short Name      |
+| ---------------------------------------------------- | ------------ | ------------------------------------------------------------------- | ------------- | --------------- |
+| [Float format](/configuration/Float%20Format.md)     | `0` (`0x00`) | `b16`, `b32`, `b64`                                                 | `b64`         | `FLOAT_FORMAT ` |
+| [Integer format](/configuration/Integer%20Format.md) | `1` (`0x01`) | `i8`, `i16`, `i32`, `i64`, `i128`,`u8`, `u16`, `u32`, `u64`, `u128` | `i32`         | `INT_FORMAT`    |
 
 ### Non-enum configurations
 
