@@ -26,7 +26,7 @@ The first [*part*](#part) of the sequence is a [variable length enum](/binary_ty
 
 Second part is the file content itself. It is described by a [variable length enum](/binary_types/Variable%20Length%20Enum.md) that indicates the file content type and then the data of such file. Format of this data is specified by the file content type.
 
-If the file content type is not in this table, the behavior of any parser is undefined. This allows for the introduction of more file content types in the future without introducing breaking changes.
+If the file content type is not in this table, the parser should notify the caller that the file content type is not recognized and should not attempt to parse the file content. This is a fatal parsing error.
 
 In this version the following content types are defined:
 
