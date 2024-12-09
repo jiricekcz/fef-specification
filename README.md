@@ -32,5 +32,5 @@ In this version the following content types are defined:
 
 | Integer value | Content Type                                              | Description                                                                                 |
 | ------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| 1             | [Raw Formula](/file_content_types/Raw%20Formula.md)       | A single evaluatable mathematical formula with no attached data                             |
-| 2             | [Single Formula](/file_content_types/Single%20Formula.md) | A single evaluatable mathematical formula with possible metadata and configuration attached |
+| `1` (`0x01`)  | [Raw Formula](/file_content_types/Raw%20Formula.md)       | A single evaluatable mathematical formula with no attached data                             |
+| `2` (`0x02`)  | [Single Formula](/file_content_types/Single%20Formula.md) | A single evaluatable mathematical formula with possible metadata and configuration attached |
