@@ -1,8 +1,8 @@
 # Variable Length Enum
 
-## Asbtract
+## Abstract
 
-A variable length enum is a binary representation of a variable, non-fixed length unsigned integer with the focus on effeciently encoding small numbers.
+A variable length enum is a binary representation of a variable, non-fixed length unsigned integer with the focus on efficiently encoding small numbers. Used in places where the number represent a count or an enum (thus the values can be expected to be relatively small). For numbers of larger size, other representations will be more efficient.
 
 ## Format
 
@@ -23,7 +23,7 @@ Parsing a variable length enum into an integer can be expressed with the followi
 function Parse_Variable_Length_Enum(byte_stream) {
     set value to 0 
     read byte from byte_stream {
-        bitshift value left by 7
+        bit-shift value left by 7
         set part to (byte AND 0x7F)
         add part to value
         if byte AND 0x80 is 0 {
