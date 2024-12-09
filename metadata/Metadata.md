@@ -1,6 +1,6 @@
 # Metadata
 
-Metadata is a collection of key-value pairs with predefined keys, that can describe a file content. Individual file content types can specify which metadata keys can be used with them. If other keys are present, they should be parsed and shouldn't cause fatal errors. Their interpretation is however undefined.
+Metadata is a collection of key-value pairs with predefined keys, that can describe a file content. Individual file content types can specify which metadata keys can be used with them. If other keys are present, they should be parsed and shouldn't cause fatal errors. They should be ignored by the parser.
 
 ## Binary encoding of metadata keys
 

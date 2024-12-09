@@ -2,7 +2,7 @@
 
 An expression is the building block of a formula. It consists of an *identifier* and *data*. The *identifier* is a [variable length enum](/binary_type/Variable%20Length%20Enum.md) that indicates the type of the expression. The *data* is a sequence of bytes that is interpreted based on the *identifier*. Usually the shorter the *data*, the lower value the *identifier* will be to provide a lower percentage overhead. 
 
-If an *identifier* present in the format is not described by this specification, the behavior of any parser is undefined. This allows for the introduction of more expressions in the future without introducing breaking changes.
+If an *identifier* present in the format is not described by this specification, the parser should notify the caller that the *identifier* is not recognized and should not attempt to parse the expression. This is a fatal parsing error.
 
 ## Expression Sets
 
