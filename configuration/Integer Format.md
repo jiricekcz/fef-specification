@@ -14,3 +14,7 @@ The Integer Format configuration key defines the format of integer literals.
 | `u16` | `0x11`     | 16 bit unsigned integer |
 | `u32` | `0x12`     | 32 bit unsigned integer |
 | `u64` | `0x13`     | 64 bit unsigned integer |
+
+## Format
+
+This configuration value is in standard format - a single [variable length enum](/binary_type/Variable%20Length%20Enum.md) with the *identifier* of the selected value. 
