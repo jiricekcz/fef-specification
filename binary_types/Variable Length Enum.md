@@ -2,7 +2,7 @@
 
 ## Abstract
 
-A variable length enum is a binary representation of a variable, non-fixed length unsigned integer with the focus on efficiently encoding small numbers.
+A variable length enum is a binary representation of a variable, non-fixed length unsigned integer with the focus on efficiently encoding small numbers. Used in places where the number represent a count or an enum (thus the values can be expected to be relatively small). For numbers of larger size, other representations will be more efficient.
 
 ## Format
 
