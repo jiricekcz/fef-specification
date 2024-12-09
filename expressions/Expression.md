@@ -44,28 +44,28 @@ Here are the tables of expressions that are defined in this version of the speci
 
 Elementary expressions are either used very often, or benefit from a very low overhead (e.g. common literals and operators, variables or single byte literals).
 
-| Identifier    | Expression                                             | Expression Type                                 | Expression Set               |
-| ------------- | ------------------------------------------------------ | ----------------------------------------------- | ---------------------------- |
-| `4` (`0x04`)  | [Variable](/expressions/Variable.md)                   | [Variable](#variable-expressions)               | [Core](#core-expression-set) |
-| `8` (`0x08`)  | [Integer Literal](/expressions/Integer%20Literal.md)   | [Literal](#literal-expressions)                 | [Core](#core-expression-set) |
-| `9` (`0x09`)  | [Float Literal](/expressions/Float%20Literal.md)       | [Literal](#literal-expressions)                 | [Core](#core-expression-set) |
-| `10` (`0x0A`) | [True Literal](/expressions/True%20Literal.md)         | [Literal](#literal-expressions)                 | [Core](#core-expression-set) |
-| `11` (`0x0B`) | [False Literal](/expressions/False%20Literal.md)       | [Literal](#literal-expressions)                 | [Core](#core-expression-set) |
-| `16` (`0x10`) | [Addition](/expressions/Addition.md)                   | [Binary Operator](#binary-operator-expressions) | [Core](#core-expression-set) |
-| `17` (`0x11`) | [Subtraction](/expressions/Subtraction.md)             | [Binary Operator](#binary-operator-expressions) | [Core](#core-expression-set) |
-| `18` (`0x12`) | [Multiplication](/expressions/Multiplication.md)       | [Binary Operator](#binary-operator-expressions) | [Core](#core-expression-set) |
-| `19` (`0x13`) | [Division](/expressions/Division.md)                   | [Binary Operator](#binary-operator-expressions) | [Core](#core-expression-set) |
-| `20` (`0x14`) | [Integer Division](/expressions/Integer%20Division.md) | [Binary Operator](#binary-operator-expressions) | [Core](#core-expression-set) |
-| `21` (`0x15`) | [Modulo](/expressions/Modulo.md)                       | [Binary Operator](#binary-operator-expressions) | [Core](#core-expression-set) |
-| `22` (`0x16`) | [Power](/expressions/Power.md)                         | [Binary Operator](#binary-operator-expressions) | [Core](#core-expression-set) |
-| `23` (`0x17`) | [Negation](/expressions/Negation.md)                   | [Unary Operator](#unary-operator-expressions)   | [Core](#core-expression-set) |
-| `24` (`0x18`) | [Root](/expressions/Root.md)                           | [Binary Operator](#binary-operator-expressions) | [Core](#core-expression-set) |
-| `25` (`0x19`) | [Integer Root](/expressions/Integer%20Root.md)         | [Binary Operator](#binary-operator-expressions) | [Core](#core-expression-set) |
-| `32` (`0x20`) | [Square](/expressions/Square.md)                       | [Unary Operator](#unary-operator-expressions)   | [Core](#core-expression-set) |
-| `33` (`0x21`) | [Cube](/expressions/Cube.md)                           | [Unary Operator](#unary-operator-expressions)   | [Core](#core-expression-set) |
-| `34` (`0x22`) | [Square Root](/expressions/Square%20Root.md)           | [Unary Operator](#unary-operator-expressions)   | [Core](#core-expression-set) |
-| `35` (`0x23`) | [Cube Root](/expressions/Cube%20Root.md)               | [Unary Operator](#unary-operator-expressions)   | [Core](#core-expression-set) |
-| `36` (`0x24`) | [Reciprocal](/expressions/Reciprocal.md)               | [Unary Operator](#unary-operator-expressions)   | [Core](#core-expression-set) |
+| Identifier    | Expression                                             | Expression Type                                 | Expression Set               | Short name |
+| ------------- | ------------------------------------------------------ | ----------------------------------------------- | ---------------------------- | ---------- |
+| `4` (`0x04`)  | [Variable](/expressions/Variable.md)                   | [Variable](#variable-expressions)               | [Core](#core-expression-set) | `VAR`      |
+| `8` (`0x08`)  | [Integer Literal](/expressions/Integer%20Literal.md)   | [Literal](#literal-expressions)                 | [Core](#core-expression-set) | `INT`      |
+| `9` (`0x09`)  | [Float Literal](/expressions/Float%20Literal.md)       | [Literal](#literal-expressions)                 | [Core](#core-expression-set) | `FLOAT`    |
+| `10` (`0x0A`) | [True Literal](/expressions/True%20Literal.md)         | [Literal](#literal-expressions)                 | [Core](#core-expression-set) | `TRUE`     |
+| `11` (`0x0B`) | [False Literal](/expressions/False%20Literal.md)       | [Literal](#literal-expressions)                 | [Core](#core-expression-set) | `FALSE`    |
+| `16` (`0x10`) | [Addition](/expressions/Addition.md)                   | [Binary Operator](#binary-operator-expressions) | [Core](#core-expression-set) | `ADD`      |
+| `17` (`0x11`) | [Subtraction](/expressions/Subtraction.md)             | [Binary Operator](#binary-operator-expressions) | [Core](#core-expression-set) | `SUB`      |
+| `18` (`0x12`) | [Multiplication](/expressions/Multiplication.md)       | [Binary Operator](#binary-operator-expressions) | [Core](#core-expression-set) | `MULT`     |
+| `19` (`0x13`) | [Division](/expressions/Division.md)                   | [Binary Operator](#binary-operator-expressions) | [Core](#core-expression-set) | `DIV`      |
+| `20` (`0x14`) | [Integer Division](/expressions/Integer%20Division.md) | [Binary Operator](#binary-operator-expressions) | [Core](#core-expression-set) | `IDIV`     |
+| `21` (`0x15`) | [Modulo](/expressions/Modulo.md)                       | [Binary Operator](#binary-operator-expressions) | [Core](#core-expression-set) | `MOD`      |
+| `22` (`0x16`) | [Power](/expressions/Power.md)                         | [Binary Operator](#binary-operator-expressions) | [Core](#core-expression-set) | `POW`      |
+| `23` (`0x17`) | [Negation](/expressions/Negation.md)                   | [Unary Operator](#unary-operator-expressions)   | [Core](#core-expression-set) | `NEG`      |
+| `24` (`0x18`) | [Root](/expressions/Root.md)                           | [Binary Operator](#binary-operator-expressions) | [Core](#core-expression-set) | `ROOT`     |
+| `25` (`0x19`) | [Integer Root](/expressions/Integer%20Root.md)         | [Binary Operator](#binary-operator-expressions) | [Core](#core-expression-set) | `IROOT`    |
+| `32` (`0x20`) | [Square](/expressions/Square.md)                       | [Unary Operator](#unary-operator-expressions)   | [Core](#core-expression-set) | `SQUARE`   |
+| `33` (`0x21`) | [Cube](/expressions/Cube.md)                           | [Unary Operator](#unary-operator-expressions)   | [Core](#core-expression-set) | `CUBE`     |
+| `34` (`0x22`) | [Square Root](/expressions/Square%20Root.md)           | [Unary Operator](#unary-operator-expressions)   | [Core](#core-expression-set) | `SQRT`     |
+| `35` (`0x23`) | [Cube Root](/expressions/Cube%20Root.md)               | [Unary Operator](#unary-operator-expressions)   | [Core](#core-expression-set) | `CBRT`     |
+| `36` (`0x24`) | [Reciprocal](/expressions/Reciprocal.md)               | [Unary Operator](#unary-operator-expressions)   | [Core](#core-expression-set) | `RECIP`    |
 
 ### Extended Expressions (*identifier* >= 128)
 
