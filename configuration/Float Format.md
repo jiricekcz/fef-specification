@@ -6,7 +6,6 @@ The Float Format configuration key defines the format of float literals as per t
 
 | Value | Identifier | Description                    |
 | ----- | ---------- | ------------------------------ |
-| `b16` | `0x00`     | Half precision binary 16 bit   |
 | `b32` | `0x01`     | Single precision binary 32 bit |
 | `b64` | `0x02`     | Double precision binary 64 bit |
 
