@@ -25,7 +25,7 @@ function Parse_Variable_Length_Enum(byte_stream) {
     read byte from byte_stream {
         bit-shift value left by 7
         set part to (byte AND 0x7F)
-        add part to value
+        set value to value OR part
         if byte AND 0x80 is 0 {
             return value
         }
@@ -39,12 +39,16 @@ function Parse_Variable_Length_Enum(byte_stream) {
 Converting an integer into a variable length enum can be expressed with the following pseudocode:
 ```pseudo
 function Convert_Integer_To_Variable_Length_Enum(value) {
-    while value > 0x7F {
-        set byte to (value AND 0x7F) OR 0x80
-        write byte to output
-        bitshift value right by 7
+    set digits to the number of digits in the binary representation of value
+    set bytes to ceil(digits / 7)
+
+    for byte_index in bytes to 1 descending {
+        set byte to (value >> (7 * byte_index)) AND 0x7F OR 0x80
+        write byte to byte_stream
     }
-    write value as byte to output
+
+    set byte to value AND 0x7F
+    write byte to byte_stream
 }
 ```
 ## Example
