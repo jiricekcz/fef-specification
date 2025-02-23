@@ -1,6 +1,6 @@
 # Formula Exchange Format (FEF)
 
-Specification for the Formula Exchange Format (FEF) [version](./Versioning.md) 0.2.0
+Specification for the Formula Exchange Format (FEF) [version](./Versioning.md) 0.3.0
 
 ## Abstract
 
